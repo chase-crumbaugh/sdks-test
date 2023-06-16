@@ -19,11 +19,12 @@ jobs:
       languages: |
         - go
       mode: pr
-      openapi_doc_auth_header: x-api-key
+      openapi_doc_auth_header: test2
       openapi_docs: |
         - https://dev.speakeasyapi.dev/v1/apis/external/version/v1/schema/download
+      speakeasy_server_url: https://dev.speakeasyapi.dev
       speakeasy_version: latest
     secrets:
       github_access_token: ${{ secrets.GITHUB_TOKEN }}
-      openapi_doc_auth_token: ${{ secrets.SPEAKEASY_API_KEY }}
+      openapi_doc_auth_token: ${{ secrets.SPEC_TOKEN }}
       speakeasy_api_key: ${{ secrets.SPEAKEASY_API_KEY }}
